@@ -26,7 +26,6 @@ class User(AbstractUser):
 class Class(models.Model):
     class_id = models.CharField(max_length=20, unique=True, verbose_name='班级编号', default='DEFAULT')
     name = models.CharField(max_length=50, verbose_name='班级名称')
-    teacher = models.CharField(max_length=50, verbose_name='班主任')
     student_count = models.IntegerField(default=0, verbose_name='学生人数')
 
     class Meta:
@@ -49,7 +48,6 @@ class Student(models.Model):
     age = models.IntegerField(verbose_name='年龄')
     class_id = models.ForeignKey(Class, on_delete=models.CASCADE, verbose_name='班级')
     phone = models.CharField(max_length=11, verbose_name='联系电话')
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
     
     class Meta:
         db_table = 'student'
@@ -74,9 +72,7 @@ class Course(models.Model):
     name = models.CharField(max_length=100, verbose_name='课程名称')
     teacher = models.CharField(max_length=50, verbose_name='任课教师')
     credit = models.DecimalField(max_digits=3, decimal_places=1, verbose_name='学分')
-    hours = models.IntegerField(verbose_name='课时')
     description = models.TextField(blank=True, verbose_name='课程描述')
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
     
     class Meta:
         db_table = 'course'
@@ -89,9 +85,7 @@ class Course(models.Model):
 class Score(models.Model):
     student = models.ForeignKey(Student, on_delete=models.CASCADE, verbose_name='学生')
     course = models.ForeignKey(Course, on_delete=models.CASCADE, verbose_name='课程')
-    score = models.DecimalField(max_digits=5, decimal_places=2, verbose_name='分数')
     semester = models.CharField(max_length=20, verbose_name='学期')
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
     
     class Meta:
         db_table = 'score'
