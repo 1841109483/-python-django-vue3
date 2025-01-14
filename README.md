@@ -1,24 +1,32 @@
+该项目是关于学生管理系统的开发，使用了python+django+vue3，现在开源出来给同学们学习。
+最新版本的东西
+功能：
+注册、登录、忘记密码
+chart可视化
+学生管理
+课程管理
+成绩管理
+班级管理
+用户管理
+
+可使用于课程设计/毕业设计（需要添加功能哦，要不然工作量低）
+
+![image](https://github.com/user-attachments/assets/de1c4747-b60d-4a33-b50a-380c4877ebc7)
+
+![image](https://github.com/user-attachments/assets/63ce589b-7c36-4467-acb4-dce74f8669aa)
+
+![image](https://github.com/user-attachments/assets/9d593101-4525-4557-8325-26dbb9dba338)
+
+![image](https://github.com/user-attachments/assets/a458099f-36e5-46de-ba67-0559070955c4)
+
+![image](https://github.com/user-attachments/assets/879cdb9b-97ba-464e-a65b-5d51903b91c7)
+
+![image](https://github.com/user-attachments/assets/6b9e8aaf-7a6b-470f-adde-7a58736b24bf)
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 网络安全/信息安全/密码学/防火墙/漏洞复现/管理系统开发/算法/机器学习/深度学习/随机森林/决策树等等均可/欢迎看下面的联系方式联系本人
 
 菜单：
 2024计算机方向：
@@ -124,7 +132,7 @@ python入侵检测系统
 基于Python的钓鱼网址识别系统
 
 
-
+可接定制化开发，网络安全系统/工具开发，前后端都可以
 需要以上的毕业设计/课程设计/课设/毕设的项目的可以联系我
 微信（WeChat）：k18411094833
 
