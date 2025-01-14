@@ -46,7 +46,6 @@ class ResetPasswordView(APIView):
             # 验证用户信息是否匹配
             user = User.objects.get(
                 username=username,
-                email=email,
                 phone=phone
             )
             # 更新密码
@@ -115,7 +114,6 @@ class CourseViewSet(viewsets.ModelViewSet):
         course_id = self.request.data.get('course_id')
         name = self.request.data.get('name')
         teacher = self.request.data.get('teacher')
-        credit = self.request.data.get('credit')
         hours = self.request.data.get('hours')
 
         if not all([course_id, name, teacher, credit, hours]):
@@ -142,7 +140,6 @@ class ScoreViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         queryset = Score.objects.all()
         student_id = self.request.query_params.get('student_id', None)
-        course_id = self.request.query_params.get('course_id', None)
         semester = self.request.query_params.get('semester', None)
         
         if student_id:
@@ -245,7 +242,6 @@ def get_stats(request):
 class StandardResultsSetPagination(PageNumberPagination):
     page_size = 10
     page_size_query_param = 'page_size'
-    max_page_size = 100
 
 class UserViewSet(viewsets.ModelViewSet):
     """
