@@ -10,6 +10,18 @@ chart可视化
 用户管理
 
 可使用于课程设计/毕业设计（需要添加功能哦，要不然工作量低）
+本项目运行：
+前后端分离项目
+pip install 包
+安装完成后，启动后端项目
+切换到后端的根目录：python manage.py runserver
+
+前端：
+前端的根目录，运行：
+npm run serve
+
+即可访问：http://localhost:8080/login
+可以自行创建数据库和表的结构，都在model中
 
 ![image](https://github.com/user-attachments/assets/de1c4747-b60d-4a33-b50a-380c4877ebc7)
 
